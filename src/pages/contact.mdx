@@ -1,0 +1,44 @@
+---
+title: Contact
+description: Contact the Sannvev Institute for research, partnership, and grant inquiries.
+---
+
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
+import PageHeading from "../components/PageHeading";
+import LogoSeal from "../components/LogoSeal";
+
+export default ({ children }) => <Layout>{children}</Layout>;
+
+export const Head = () => (
+  <SEO title="Contact" pathname="/contact/" description="Contact the Sannvev Institute for research, partnership, and grant inquiries." />
+);
+
+<LogoSeal size="sm" />
+
+<PageHeading
+  eyebrow="Contact"
+  title="Get in touch."
+  lede="The Institute welcomes correspondence from research partners, government program officers, industry collaborators, and members of the press."
+/>
+
+## General inquiries
+
+**Email:** [contact@sannvev.ca](mailto:contact@sannvev.ca)
+
+## Mailing address
+
+Sannvev Institute<br />
+c/o Manitoba Innovates<br />
+Winnipeg, Manitoba<br />
+Canada
+
+{/* TODO: confirm mailing address with Manitoba Innovates once desk/office arrangement is finalized. */}
+
+## Partnerships & research
+
+Inquiries regarding research collaboration, sponsored studies, and academic partnerships are welcomed and typically receive a response within ten business days.
+
+## Media
+
+Media inquiries should be directed to the general contact email above with "Media" in the subject line.

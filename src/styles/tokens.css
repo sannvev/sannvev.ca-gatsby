@@ -1,0 +1,41 @@
+:root {
+  /* Brand palette — derived from Sannvev wordmark */
+  --ink: #0b0b0b;
+  --forest: #2e6b40;
+  --sage: #7aa082;
+  --bone: #e8e4d6;
+  --paper: #ffffff;
+  --slate: #3a3f3b;
+  --rule: #d9d5c6;
+
+  /* Semantic */
+  --bg: var(--paper);
+  --bg-muted: var(--bone);
+  --fg: var(--slate);
+  --fg-strong: var(--ink);
+  --accent: var(--forest);
+  --accent-soft: var(--sage);
+  --border: var(--rule);
+
+  /* Type */
+  --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --fs-base: 1.0625rem; /* 17px */
+  --lh-base: 1.65;
+
+  /* Spacing scale (4pt) */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-6: 1.5rem;
+  --s-8: 2rem;
+  --s-12: 3rem;
+  --s-16: 4rem;
+  --s-24: 6rem;
+
+  /* Layout */
+  --measure: 42rem; /* ~680px reading column */
+  --measure-wide: 64rem;
+}

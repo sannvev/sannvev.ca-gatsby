@@ -1,0 +1,11 @@
+node_modules/
+.cache/
+public/
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+gatsby-types.d.ts

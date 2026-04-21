@@ -1,0 +1,22 @@
+---
+title: News
+description: Updates from the Sannvev Institute.
+---
+
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
+import PageHeading from "../components/PageHeading";
+
+export default ({ children }) => <Layout>{children}</Layout>;
+
+export const Head = () => (
+  <SEO title="News" pathname="/news/" description="Updates from the Sannvev Institute." />
+);
+
+<PageHeading
+  eyebrow="News"
+  title="Institute updates."
+  lede="This page will host announcements, research notes, and press releases from the Sannvev Institute."
+/>
+
+No posts yet. Check back soon, or subscribe by emailing [contact@sannvev.ca](mailto:contact@sannvev.ca).

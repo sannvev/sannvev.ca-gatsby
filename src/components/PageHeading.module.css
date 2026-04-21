@@ -1,0 +1,22 @@
+.heading {
+  margin-bottom: var(--s-8);
+  padding-bottom: var(--s-6);
+  border-bottom: 1px solid var(--border);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin: 0 0 var(--s-2);
+  font-weight: 500;
+}
+
+.lede {
+  font-size: 1.1875rem;
+  color: var(--fg);
+  line-height: 1.55;
+  margin: var(--s-4) 0 0;
+  max-width: 36rem;
+}
