@@ -36,7 +36,7 @@ sannvev.ca-gatsby/
 │   ├── CNAME                 # custom domain for GitHub Pages (sannvev.ca)
 │   └── sannvev-logo.png
 └── .github/workflows/
-    └── deploy-pages.yml      # build + publish to GitHub Pages on push to main
+    └── gatsby.yml            # build + publish to GitHub Pages on push to main
 ```
 
 ## Style tokens
@@ -57,7 +57,7 @@ Non-devs can edit copy directly in `src/pages/*.mdx`. Frontmatter (`title`, `des
 
 ## Deployment — GitHub Pages
 
-Every push to `main` triggers [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml), which runs `npm run build` and publishes `public/` to the `github-pages` environment. GitHub Pages then serves the site at `https://sannvev.ca` (custom domain declared in [`static/CNAME`](static/CNAME), which Gatsby copies to the site root at build time).
+Every push to `main` triggers [`.github/workflows/gatsby.yml`](.github/workflows/gatsby.yml), which runs `npm run build` and publishes `public/` to the `github-pages` environment. GitHub Pages then serves the site at `https://sannvev.ca` (custom domain declared in [`static/CNAME`](static/CNAME), which Gatsby copies to the site root at build time). The workflow uses `configure-pages` with `static_site_generator: gatsby`, which auto-injects a `pathPrefix` when the site is served under the fallback `sannvev.github.io/sannvev.ca-gatsby/` URL and drops it once the custom domain is active.
 
 ### One-time setup
 
