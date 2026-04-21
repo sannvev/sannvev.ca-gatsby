@@ -10,9 +10,10 @@ const LogoSeal: React.FC<LogoSealProps> = ({ size = "md" }) => (
     <StaticImage
       src="../images/sannvev-mark.png"
       alt=""
-      placeholder="blurred"
+      placeholder="none"
       layout="constrained"
-      width={320}
+      width={480}
+      quality={90}
     />
   </div>
 );
