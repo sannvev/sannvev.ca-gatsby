@@ -107,7 +107,7 @@ Every build is deterministic from Git, so rollback = `git revert <sha>` + push. 
 ### Notes & limitations of GitHub Pages
 
 - **No custom response headers.** HSTS, CSP, and similar must be set via `<meta>` tags if at all (weaker than real headers). Acceptable here because the site serves static informational content and does not accept user input.
-- **Email is on ProtonMail**, not GitHub — `contact@sannvev.ca` is handled by ProtonMail's MX records at Namecheap, independently of the Pages DNS above. Don't let the Pages DNS setup overwrite the ProtonMail MX/TXT records.
+- **Email is on ProtonMail**, not GitHub — `jordan@sannvev.ca` is handled by ProtonMail's MX records at Namecheap, independently of the Pages DNS above. Don't let the Pages DNS setup overwrite the ProtonMail MX/TXT records.
 - **Build minutes** on GitHub Pages are generous for public repos; for private repos, check the Actions billing page.
 
 ---
