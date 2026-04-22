@@ -4,7 +4,7 @@ import * as styles from "./Header.module.css";
 
 const nav = [
   { to: "/about/", label: "About" },
-  { to: "/research/", label: "Research" },
+  { to: "/projects/", label: "Projects" },
   { to: "/engagement/", label: "Engagement" },
   { to: "/contact/", label: "Contact" },
 ];

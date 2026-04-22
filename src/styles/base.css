@@ -151,7 +151,7 @@ img {
   background: var(--bg-muted);
   color: var(--fg);
   padding: var(--s-4) var(--s-6);
-  margin: 0 0 var(--s-6);
+  margin: var(--s-8) 0;
   border-radius: 0 4px 4px 0;
   font-size: 0.9375rem;
   line-height: 1.55;
@@ -159,4 +159,69 @@ img {
 
 .notice strong {
   color: var(--fg-strong);
+}
+
+/* Hero */
+
+.hero {
+  margin-bottom: var(--s-12);
+}
+
+.hero-deck {
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 1rem + 0.8vw, 1.5rem);
+  line-height: 1.4;
+  color: var(--fg-strong);
+  max-width: 38rem;
+  margin: 0 0 var(--s-6);
+}
+
+.hero-support {
+  color: var(--fg);
+  font-size: 0.9375rem;
+  margin: 0 0 var(--s-6);
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+  margin: var(--s-6) 0 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: var(--s-3) var(--s-6);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+  border: 1px solid transparent;
+  line-height: 1.2;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--paper);
+  border-color: var(--accent);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background: var(--fg-strong);
+  color: var(--paper);
+  border-color: var(--fg-strong);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+  background: var(--accent);
+  color: var(--paper);
 }

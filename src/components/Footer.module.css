@@ -10,11 +10,11 @@
   margin: 0 auto;
   padding: var(--s-12) var(--s-6) var(--s-8);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--s-8);
+  grid-template-columns: 2fr 1fr;
+  gap: var(--s-12);
 }
 
-.block p {
+.institutional p {
   margin: 0 0 var(--s-2);
 }
 
@@ -22,14 +22,23 @@
   font-family: var(--font-serif);
   font-weight: 600;
   color: var(--fg-strong);
+  font-size: 1.0625rem;
 }
 
-.muted {
+.meta {
   color: var(--fg);
   font-size: 0.9375rem;
+  line-height: 1.6;
 }
 
-.list {
+.linksCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+
+.list,
+.listPending {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -38,7 +47,8 @@
   gap: var(--s-2);
 }
 
-.list li + li {
+.list li + li,
+.listPending li + li {
   margin-top: 0;
 }
 
@@ -54,13 +64,29 @@
   text-decoration: underline;
 }
 
-.copyline {
+.pending {
+  color: var(--fg);
+  opacity: 0.55;
+  font-size: 0.9375rem;
+  cursor: default;
+}
+
+.pendingNote {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--fg);
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.bottomBar {
   max-width: var(--measure-wide);
   margin: 0 auto;
   padding: var(--s-4) var(--s-6) var(--s-8);
   border-top: 1px solid var(--border);
   color: var(--fg);
   font-size: 0.8125rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 640px) {
@@ -69,7 +95,7 @@
     gap: var(--s-6);
     padding: var(--s-8) var(--s-4) var(--s-6);
   }
-  .copyline {
+  .bottomBar {
     padding: var(--s-4);
   }
 }

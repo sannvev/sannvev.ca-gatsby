@@ -1,12 +1,13 @@
 ---
 title: Home
-description: Sannvev Institute is a Canadian non-profit advancing auditable AI and information integrity research.
+description: Sannvev Institute is a neutral convening body chartering open standards and reference implementations for trust, provenance, and verifiability in AI and information systems.
 ---
 
+import { Link } from "gatsby";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import OrgJsonLd from "../components/OrgJsonLd";
-import CardRow from "../components/CardRow";
+import InfoCards from "../components/InfoCards";
 import LogoSeal from "../components/LogoSeal";
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -25,22 +26,43 @@ export const Head = () => {
 
 <LogoSeal size="lg" />
 
-# Sannvev Institute
+<div className="hero">
 
-<div className="notice">
-  <strong>Under construction.</strong> This website is in active development. Content, structure, and details will continue to evolve as the Institute's programs and partnerships take shape.
+# Auditable infrastructure for AI and information systems.
+
+<p className="hero-deck">
+  Sannvev Institute is a neutral convening body chartering open standards and reference implementations for trust, provenance, and verifiability in AI and information systems.
+</p>
+
+<p className="hero-support">
+  A Canadian federal not-for-profit operating on a foundation-and-projects model.
+</p>
+
+<div className="cta-row">
+  <Link to="/projects/" className="btn btn-primary">Explore the Projects →</Link>
+  <Link to="/engagement/" className="btn btn-secondary">Engage with the Institute →</Link>
 </div>
 
-A Canadian non-profit advancing **auditable AI** and **information integrity** research.
+</div>
 
-The Institute studies how trust, provenance, and verifiability can be engineered into information systems — from multi-agent AI to public discourse. Our work is grounded in formal epistemic reasoning and applied to domains where accountability matters: national security, regulated industries, and democratic infrastructure.
-
-<CardRow cards={[
-  { to: "/about/", title: "About", body: "Mission and governance of the Institute." },
-  { to: "/research/", title: "Research", body: "Programs advancing auditable AI and information provenance." },
-  { to: "/contact/", title: "Contact", body: "Reach the Institute for partnership, grant, and research inquiries." },
+<InfoCards cards={[
+  {
+    eyebrow: "What we do",
+    title: "Open standards and reference implementations.",
+    body: "The Institute charters projects that produce specifications, open-source code, and validation tooling for AI systems whose outputs need to be trustworthy, auditable, or independently verifiable.",
+  },
+  {
+    eyebrow: "How we work",
+    title: "Neutral, member-supported, open by default.",
+    body: "Governance follows the foundation-and-projects model established by organizations like the Apache Software Foundation and Eclipse Foundation. Most work is open source. Corporate members and project sponsors fund the staff and infrastructure that keep the work moving.",
+  },
+  {
+    eyebrow: "Why it matters",
+    title: "Accountability where it counts.",
+    body: "AI and information systems are being adopted faster than the infrastructure to hold them accountable. The Institute builds that infrastructure — in defence and national security, regulated industries, and democratic institutions — and publishes it as a public good.",
+  },
 ]} />
 
----
-
-Member, Manitoba Innovates. Canadian federal not-for-profit corporation.
+<div className="notice">
+  <strong>Status.</strong> The Institute was incorporated in April 2026 and is in its foundational phase. This site will expand as projects, partnerships, and governance documents are published. For inquiries in the interim, see <a href="/contact/">Contact</a>.
+</div>
