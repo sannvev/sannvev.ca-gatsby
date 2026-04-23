@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           <p className={styles.meta}>
             A Canadian federal not-for-profit corporation (CNCA).
             <br />
-            Corporation #1787325-5 · Incorporated April 22, 2026.
+            Incorporated April 22, 2026.
             <br />
             Registered office: 423 Main Street, 8th Floor,
             <br />
